@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { block } from 'million/react';
+import { block } from 'million/next';
 
 
 
