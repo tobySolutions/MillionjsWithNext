@@ -1,24 +1,12 @@
-Welcome to the NextJS base template bootstrapped using the `create-next-app`. This template supports TypeScript, but you can use normal JavaScript as well.
+# Integrating Millionjs with Nextjs
 
-## Getting Started
+In this article, we'll explore how to integrate Millionjs with Nextjs to improve the performance of React applications. Millionjs is a lightweight virtual DOM that can make React components up to 70% faster. Nextjs, on the other hand, is a popular framework for building server-side rendered React applications. By combining Millionjs with Nextjs, we can further optimize our applications and improve rendering and loading speeds.
 
-Hit the run button to start the development server.
+## Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on `/api/hello`. This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-## Productionizing your Next App
-
-To make your next App run smoothly in production make sure to [turn this repl to an always-on repl.](https://docs.replit.com/hosting/enabling-always-on)
-
-You can also produce a production build by running `npm run build` and [changing the run command](https://docs.replit.com/programming-ide/configuring-repl#run) to `npm run start`.
+- Millionjs is a lightweight virtual DOM that can make React components up to 70% faster.
+- Nextjs is a popular framework for building server-side rendered React applications.
+- Integrating Millionjs with Nextjs can help optimize React applications and improve rendering and loading speeds.
+- To integrate Millionjs with Nextjs, you need to install the Millionjs library and add a compiler built for Nextjs into the application.
+- Using Millionjs in components is as simple as wrapping them in the `block` function provided by the Millionjs library.
+- Overall, using Millionjs with Nextjs can help reduce overhead and improve the performance of React applications.
