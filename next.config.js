@@ -1,10 +1,8 @@
-import million from 'million/compiler';
- 
-const withMillion = million.next();
+import million from "million/compiler";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
+};
 
-export default withMillion(nextConfig);
+export default million.next(nextConfig);
