@@ -1,43 +1,10 @@
-// import { useState } from 'react';
-// import styles from '../styles/Home.module.css'
-// import { block } from 'million/next';
-
-// const HomeBlock = () => {
-//   const [count, setCount] = useState(0)
-//   return (
-//     <div className={styles.container}>
-//       <main className={styles.main}>
-//         <h1 className={styles.title}>
-//           Welcome to Next.js with Million!
-//         </h1>
-
-//         <p className={styles.description}>
-//           Get started by editing{' '}
-//           <code className={styles.code}>pages/index.tsx</code>
-//         </p>
-
-//         <p className={styles.description}>
-//           Check out <a href="millionjs.org">Millionjs</a>
-//         </p>
-
-//         <button onClick={() => setCount(count + 1)}>
-
-//         </button>
-//       </main>
-//     </div>
-//   )
-// }
-
-// const Home = block(HomeBlock);
-
-// export default Home;
-
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { block } from "million/next";
 import { useState } from "react";
+import { block } from "million/next";
 
-const Main = ({ count, setCount }) => {
+const Main = () => {
+  const [count, setCount] = useState(0);
   return (
     <main className={styles.main}>
       <h1 className={styles.title}>Welcome to Next.js with Million!</h1>
@@ -51,9 +18,7 @@ const Main = ({ count, setCount }) => {
         Check out <a href="millionjs.org">Millionjs</a>
       </p>
 
-      <button onClick={() => setCount((count) => count + 1)}>
-        Count is {count}
-      </button>
+      <button onClick={() => setCount(count + 1)}>Count is {count}</button>
     </main>
   );
 };
@@ -61,7 +26,6 @@ const Main = ({ count, setCount }) => {
 const MainBlock = block(Main);
 
 const Home = () => {
-    const [count, setCount] = useState(0);
   return (
     <div className={styles.container}>
       <Head>
@@ -70,7 +34,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <MainBlock count={count} setCount={setCount}/>
+      <MainBlock />
     </div>
   );
 };
